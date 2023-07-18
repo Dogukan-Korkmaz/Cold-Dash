@@ -9,7 +9,7 @@ public class CrashDetector : MonoBehaviour
     [SerializeField] ParticleSystem crashEffect;
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Ground2")
         {
             crashEffect.Play();
             Invoke("ReloadScene", loadDelay); 
