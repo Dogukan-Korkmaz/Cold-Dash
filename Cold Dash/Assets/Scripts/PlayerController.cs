@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     SurfaceEffector2D ground1speed, ground2speed;
     GameObject ground,ground2;
+    bool canMove = true;
 
     void Start()
     {
@@ -26,8 +27,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        RotatePlayer();
-        RespondToBoost();
+        if (canMove)
+        {
+            RotatePlayer();
+            RespondToBoost();
+        }
+        
+    }
+
+    public void DisableControls()
+    {
+        canMove = false;
     }
 
     void RespondToBoost()
