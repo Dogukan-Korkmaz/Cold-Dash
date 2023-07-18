@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //SerializeField hýzlý bir þekilde farklý deðiþkenleri test etmek için kullanýlýr.
-    [SerializeField] float torqueAmount = 1f;
-    [SerializeField] float boostSpeed = 50f;
+    [SerializeField] float torqueAmount = 25f;
+    [SerializeField] float boostSpeed = 35f;
     [SerializeField] float baseSpeed = 20f;
 
     //Evrensel Deðiþkenler

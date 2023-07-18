@@ -8,7 +8,7 @@ public class DustTrail : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")//Yere deðmeye baðlý efekt tetiklenmesi
         {
             dustParticles.Play();
         }
@@ -25,6 +25,4 @@ public class DustTrail : MonoBehaviour
             dustParticles.Stop();
         }
     }
-
-
 }

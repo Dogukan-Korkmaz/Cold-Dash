@@ -13,7 +13,7 @@ public class CrashDetector : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Ground2")
         {       
-            if (notSecendTime)
+            if (notSecendTime)//2kez tetiklenmemeli
             {
                 FindObjectOfType<PlayerController>().DisableControls();
                 crashEffect.Play();
@@ -26,6 +26,6 @@ public class CrashDetector : MonoBehaviour
     
     void ReloadScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
